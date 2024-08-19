@@ -1,0 +1,160 @@
+/* styles.css */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* marge à zero */
+* {
+    margin: 0;
+}
+
+/* font size */
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* padding */
+body {
+    padding: 0;
+}
+
+/* list styles */
+ol,
+ul {
+    list-style: none;
+}
+
+/* link styles */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*  images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove built-in focus styles */
+button,
+input,
+select,
+textarea {
+    outline: none;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EDEDED;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/Background.png') no-repeat center center/cover;
+    
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFD15B;
+    padding: 20px;
+   
+}
+
+.logo-img {
+    position: absolute;
+    top: 51px;
+    left: 59px;
+    width: 207px;
+    height: 26px;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-family: "Anton", sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 66.24px;
+    text-transform: uppercase;
+}
+
+.research-field {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+    background: #FFF;
+    border-radius: 11px;
+    padding: 10px;
+}
+
+.research-field input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-icon {
+    width: 51px;
+    height: 52px;
+    background: #1B1B1B;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.search-icon:hover {
+    background-color: #333;
+}
+
+.search-icon svg {
+    width: 28px;
+    height: 29px;
+}
+
+
+/* styles dropdowns */
+
+.dropdown-content {
+    display: none; /* Masqué par défaut */
+  }
+  
+  .dropdown-content.open {
+    display: block; /* Affiché lorsque la classe "open" est ajoutée */
+  }
+
+  
+  .dropdown-button::after { /* Utilisation du pseudo-élément ::after pour insérer la flèche */
+    content: "▼"; /* Caractère chevron */
+    margin-left: 5px; /* Espacement entre le texte et la flèche */
+  }
